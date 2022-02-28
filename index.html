@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Btn1OnClick() {
+            let txtInput = document.getElementById("input1").value;
+            if (txtInput) {
+                if (txtInput === "100 milion dolar") {
+                    alert("Realy?");
+                } 
+                else {
+                    document.getElementById("list1").innerHTML += `<li>` + txtInput + `</li>`;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Wish List</h1>
+    <input type="text" name="" id="input1">
+    <button onclick="Btn1OnClick()" id="btn1">Click </button>
+    <ul id="list1"></ul>
+</body>
+
+</html>
